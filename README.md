@@ -27,9 +27,25 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
-##Getting Started
-Install node package:npm install
+## Getting Started
+Install node 
+package:npm install
 
-##Documented
+## Documented
+imgSelect: "html"  //use "background" instead of "html" if images is used in background
+items: "7"
+keyBoard: "true"
+mouse: "true"
+nav: "true"
+dot: "true" 
+_360: "1"
+_480: "2"
+_768: "3"
+_1199: "4"
+_1500: "6"
+_1700: "1"
+
+
+
 
 
