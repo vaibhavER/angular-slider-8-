@@ -1,0 +1,115 @@
+@import '../../mixin';
+
+.slider {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    &.bg {
+        height: 601px;
+    }
+}
+
+.sliderParent {
+    overflow: hidden;
+    position: relative;
+    min-height: 150px;
+}
+
+
+.navClass {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+}
+
+button#next {
+    float: right;
+}
+
+.sliderMain {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav_dots button {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.textBanner{
+   @include positIdentify(absolute);
+   background-color: rgba(255, 255, 255, 0.72);
+   width: 75%;
+   margin: auto;
+   border-radius: 5px;
+   padding: 16px 0;
+   & p {
+    margin: 9px 0;
+    color: #4e4e4e;
+    font-size: 15px;
+    }
+    & h2 {
+        font-size: 26px;
+        text-transform: uppercase;
+    }
+    & button {
+        background-color: #f00;
+        border: 0;
+        color: #fff;
+        padding: 7px 19px;
+        text-transform: uppercase;
+    }
+
+
+}
+
+.nav_dots {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    & button {
+        background-color: #000;
+        border: 0;
+        margin: 0 4px;
+        border-radius: 50%;
+        position: relative;
+        &.active:before{
+            position: absolute;
+            left: 1px;
+            right: 0;
+            width: 7px;
+            height: 7px;
+            background-color: #fff;
+            content: "";
+            border-radius: 50%;
+            top: 4px;
+            margin: auto;
+        }
+    }
+
+}
+
+.slidLoad {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    z-index: 1;
+}
+
+
+
+
+

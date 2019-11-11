@@ -1,0 +1,25 @@
+
+
+<div class="">
+<div class="sliderParent" appNavDir appNextNav appPrev appDotNav #lenCalc appCloneDir>
+    <div class="sliderMain" appWidthDir>
+        <ng-template [ngIf]="sliderControl != null">
+            <div class="slider" *ngFor="let items of sliderText; index as i" id='slider_{{i}}' [ngStyle]="{
+                backgroundImage: sliderControl.imgSelect != 'html' ? 'url(../../'+items.src+')' : 'url(null)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+             }" [class.bg]="sliderControl.imgSelect != 'html'">
+                <img *ngIf="sliderControl.imgSelect == 'html'" [src]="items.src" [name]="items.name">
+                <div class="textBanner" *ngIf="items.heading != '' && items.paraText != ''">
+                    <h2 *ngIf="items.heading != ''">{{items.heading}}</h2>
+                    <p *ngIf="items.paraText != ''">{{items.paraText}}</p>
+                    <button type="button">{{items.buttonText}}</button>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+    <div *ngIf="loader" class="slidLoad">
+        <img src="assets/loader.gif">
+    </div>
+</div>
+</div>

@@ -1,0 +1,22 @@
+@mixin crossBrow($suffix, $preffix) {
+    -webkit-#{$suffix}: translateY(-$preffix);
+     #{$suffix} : translateY(-$preffix);
+}
+
+@mixin positIdentify($pos){
+    @if $pos == 'relative' {
+        @include posAlign(auto,auto, auto, false);
+    } @else {
+        position: $pos;
+        @include posAlign(0,0, 50%, true);
+    }
+}
+
+@mixin posAlign($left, $right, $top, $false){
+    left: $left;
+    right: $right;
+    top: $top;
+    @if $false == true {
+        @include crossBrow(transform, $top);
+    }
+}
