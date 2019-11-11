@@ -45,6 +45,11 @@ _1199: "4" </br>
 _1500: "6" </br>
 _1700: "1"  </br>
 
+![alt control](http://onlinedemo.best/sliderDoc/control.jpg)
+
+Edit slider in backened
+![alt control](http://onlinedemo.best/sliderDoc/slider.jpg)
+
 
 
 
