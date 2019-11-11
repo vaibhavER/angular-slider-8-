@@ -28,22 +28,22 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## Getting Started
-Install node 
+Install node </br>
 package:npm install
 
 ## Documented
-imgSelect: "html"  //use "background" instead of "html" if images is used in background
-items: "7"
-keyBoard: "true"
-mouse: "true"
-nav: "true"
-dot: "true" 
-_360: "1"
-_480: "2"
-_768: "3"
-_1199: "4"
-_1500: "6"
-_1700: "1"
+imgSelect: "html"  //use "background" instead of "html" if images is used in background </br>
+items: "7" </br>
+keyBoard: "true" </br>
+mouse: "true" </br>
+nav: "true" </br>
+dot: "true"  </br>
+_360: "1" </br>
+_480: "2" </br>
+_768: "3" </br>
+_1199: "4" </br>
+_1500: "6" </br>
+_1700: "1"  </br>
 
 
 
